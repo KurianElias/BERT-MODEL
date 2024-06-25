@@ -24,10 +24,10 @@ def pdf_to_text(pdf_file):
 
 def clean(text):
     """
-    Clean the input text by removing URLs, emails, special characters, and stop words.
+#    Clean the input text by removing URLs, emails, special characters, and stop words.
 
-    :param text: The string to be cleaned
-    :return: The cleaned string
+#    :param text: The string to be cleaned
+ #   :return: The cleaned string
     """
     # Compile patterns for URLs and emails to speed up cleaning process
     url_pattern = re.compile(r'https?://\S+|www\.\S+')
