@@ -62,7 +62,7 @@ job_description = st.text_area("Job Description", height=200)
 
 
 
-if st.button("Check Matchm Score"):
+if st.button("Check Match Score"):
     
     if uploaded_file is not None:
      try:
