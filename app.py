@@ -62,7 +62,7 @@ job_description = st.text_area("Job Description", height=200)
 
 
 
-if st.button("Check Match Score"):
+if st.button("Check Matchm Score"):
     
     if uploaded_file is not None:
      try:
@@ -100,12 +100,12 @@ if st.button("Check Match Score"):
         jd_skills = extract_skills_jd(jd)
         st.success('Extracting skills from Job Description successful!')
         # Display extracted skills
-        if resume_skills:
-            st.write("**Resume Skills:**")
-            st.write(", ".join(resume_skills))
-        if jd_skills:
-            st.write("**Job Description Skills:**")
-            st.write(", ".join(jd_skills))
+        # if resume_skills:
+        #     st.write("**Resume Skills:**")
+        #     st.write(", ".join(resume_skills))
+        # if jd_skills:
+        #     st.write("**Job Description Skills:**")
+        #     st.write(", ".join(jd_skills))
         
         # Check match using BERT
         if resume_skills and jd_skills:
@@ -127,4 +127,3 @@ if st.button("Check Match Score"):
             st.pyplot(fig1)
     else:
         st.write("Please provide both resume and job description.")
-
